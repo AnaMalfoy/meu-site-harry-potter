@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universo Harry Potter</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background-color: #740001;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+        nav {
+            background-color: #D3A625;
+            padding: 1em;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 1em;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            margin: 2em;
+            padding: 2em;
+            background-color: white;
+            border-radius: 10px;
+        }
+        h2 {
+            color: #740001;
+        }
+        .quiz {
+            margin-top: 2em;
+        }
+        .quiz button {
+            background-color: #740001;
+            color: white;
+            border: none;
+            padding: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .quiz button:hover {
+            background-color: #D3A625;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .gallery img {
+            margin: 10px;
+            border-radius: 10px;
+            width: 200px;
+            height: auto;
+        }
+        .grifinoria {
+            --main-bg-color: #740001;
+            --accent-color: #D3A625;
+        }
+        .sonserina {
+            --main-bg-color: #1A472A;
+            --accent-color: #AAAAAA;
+        }
+        .corvinal {
+            --main-bg-color: #0E1A40;
+            --accent-color: #946B2D;
+        }
+        .lufa-lufa {
+            --main-bg-color: #EEE117;
+            --accent-color: #000000;
+        }
+        body.grifinoria header, body.grifinoria footer {
+            background-color: var(--main-bg-color);
+        }
+        body.grifinoria nav {
+            background-color: var(--accent-color);
+        }
+        body.sonserina header, body.sonserina footer {
+            background-color: var(--main-bg-color);
+        }
+        body.sonserina nav {
+            background-color: var(--accent-color);
+        }
+        body.corvinal header, body.corvinal footer {
+            background-color: var(--main-bg-color);
+        }
+        body.corvinal nav {
+            background-color: var(--accent-color);
+        }
+        body.lufa-lufa header, body.lufa-lufa footer {
+            background-color: var(--main-bg-color);
+        }
+        body.lufa-lufa nav {
+            background-color: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Universo de Harry Potter</h1>
+    </header>
+    <nav>
+        <a href="#sobre-livros">Livros</a>
+        <a href="#sobre-filmes">Filmes</a>
+        <a href="#personagens">Personagens</a>
+        <a href="#feitiços">Feitiços</a>
+        <a href="#criaturas-magicas">Criaturas Mágicas</a>
+        <a href="#curiosidades">Curiosidades</a>
+        <a href="#quiz">Quiz</a>
+        <a href="#galeria">Galeria</a>
+    </nav>
+    <section id="sobre-livros">
+        <h2>Sobre os Livros</h2>
+        <p>Informações sobre os livros de Harry Potter.</p>
+    </section>
+    <section id="sobre-filmes">
+        <h2>Sobre os Filmes</h2>
+        <p>Informações sobre os filmes de Harry Potter.</p>
+    </section>
+    <section id="personagens">
+        <h2>Personagens</h2>
+        <p>Informações sobre os personagens de Harry Potter.</p>
+    </section>
+    <section id="feitiços">
+        <h2>Feitiços</h2>
+        <p>Informações sobre os feitiços no universo de Harry Potter.</p>
+    </section>
+    <section id="criaturas-magicas">
+        <h2>Criaturas Mágicas</h2>
+        <p>Informações sobre as criaturas mágicas no universo de Harry Potter.</p>
+    </section>
+    <section id="curiosidades">
+        <h2>Curiosidades</h2>
+        <p>Curiosidades sobre o universo de Harry Potter.</p>
+    </section>
+    <section id="quiz">
+        <h2>Quiz das Casas de Hogwarts</h2>
+        <p>Descubra a qual casa de Hogwarts você pertence!</p>
+        <div class="quiz">
+            <form id="quizForm">
+                <p>1. O que você mais valoriza?</p>
+                <label><input type="radio" name="q1" value="grifinoria"> Coragem e bravura</label><br>
+                <label><input type="radio" name="q1" value="sonserina"> Ambição e astúcia</label><br>
+                <label><input type="radio" name="q1" value="corvinal"> Inteligência e sabedoria</label><br>
+                <label><input type="radio" name="q1" value="lufa-lufa"> Lealdade e paciência</label><br>
+                
+                <p>2. Qual seria a sua aula favorita em Hogwarts?</p>
+                <label><input type="radio" name="q2" value="grifinoria"> Defesa Contra as Artes das Trevas</label><br>
+                <label><input type="radio" name="q2" value="sonserina"> Poções</label><br>
+                <label><input type="radio" name="q2" value="corvinal"> Feitiços</label><br>
+                <label><input type="radio" name="q2" value="lufa-lufa"> Herbologia</label><br>
+
+                <p>3. Qual animal de estimação você levaria para Hogwarts?</p>
+                <label><input type="radio" name="q3" value="grifinoria"> Coruja</label><br>
+                <label><input type="radio" name="q3" value="sonserina"> Serpente</label><br>
+                <label><input type="radio" name="q3" value="corvinal"> Gato</label><br>
+                <label><input type="radio" name="q3" value="lufa-lufa"> Texugo</label><br>
+
+                <p>4. O que você faria se encontrasse um colega de classe trapaceando em um exame?</p>
+                <label><input type="radio" name="q4" value="grifinoria"> Confrontaria a pessoa e tentaria persuadi-la a admitir</label><br>
+                <label><input type="radio" name="q4" value="sonserina"> Usaria isso como uma vantagem no futuro</label><br>
+                <label><input type="radio" name="q4" value="corvinal"> Contaria ao professor discretamente</label><br>
+                <label><input type="radio" name="q4" value="lufa-lufa"> Tentaria entender por que a pessoa trapaceou e oferecer ajuda</label><br>
+
+                <button type="button" onclick="calcularCasa()">Enviar</button>
+            </form>
+            <p id="resultado-quiz"></p>
+        </div>
+    </section>
+    <section id="galeria">
+        <h2>Galeria de Imagens</h2>
+        <div class="gallery">
+            <img src="https://via.placeholder.com/200" alt="Imagem 1">
+            <img src="https://via.placeholder.com/200" alt="Imagem 2">
+            <img src="https://via.placeholder.com/200" alt="Imagem 3">
+            <img src="https://via.placeholder.com/200" alt="Imagem 4">
+            <img src="https://via.placeholder.com/200" alt="Imagem 5">
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Universo Harry Potter. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function calcularCasa() {
+            const form = document.getElementById('quizForm');
+            const respostas = {
+                grifinoria: 0,
+                sonserina: 0,
+                corvinal: 0,
+                lufa-lufa: 0
+            };
+
+            const perguntas = ['q1', 'q2', 'q3', 'q
